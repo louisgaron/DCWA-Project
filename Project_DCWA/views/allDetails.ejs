@@ -1,0 +1,23 @@
+<h1>All City Details</h1>
+
+<% city.forEach((city) =>
+{ %>
+    <form name="myform" action="" method="get">
+        All City Details <br>
+        City Code: <input type="text" name="inputbox" value =<% city.city_code %>>
+        City Name: <input type="text" name="inputbox" value=<% city.city_name %>>
+        City population: <input type="text" name="inputbox" value=<% city.population %>>
+        By The Sea: <input type="text" name="inputbox" value=<% city.isCoastal %>>
+        Area (KM): <input type="text" name="inputbox" value=<% city.areaKM %>>
+        <br>
+        <br>
+
+        Country Code: <input type="text" name="inputbox" value =<% city.country_code %>>
+        Country Name: <input type="text" name="inputbox" value =<% country.country_name %>>
+    </form>
+<% }) %>
+
+<br><br>
+<form action="/" class="inline">
+    <button class="float-left submit-button" >Home</button>
+</form>

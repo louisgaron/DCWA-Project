@@ -1,0 +1,26 @@
+<h1>Heads Of State</h1>
+
+
+<form action="/addHeadsOfState" class="inline">
+    <button class="float-left submit-button" >Add Country</button>
+</form>
+
+<table>
+    <tr>
+        <th>Country Code</th>
+        <th>Head Of State</th>
+    </tr>
+    <% city.forEach((headName) =>
+{ %>
+    <tr>
+        <td><%= country.co_code %></td>
+        <td><%= headName%></td>
+    </tr>
+
+    <% }) %>
+</table>
+
+<br><br>
+<form action="/" class="inline">
+    <button class="float-left submit-button" >Home</button>
+</form>
